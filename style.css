@@ -1,3 +1,6 @@
+*{
+    font-family:"Guardian-EgypTT","Charter","Charter Bitstream","Cambria","Noto Serif Light","Droid Serif","Georgia","serif";
+}
 .nav_bar{
     display: flex;
     flex-wrap: wrap;
@@ -32,7 +35,9 @@ i{
     width: 180px;   
 
 }
-h2{text-align: center;}
+h2{margin-left: 15px;
+    margin-top: 20px;
+}
 .bg:hover{
     background-color: #ccc;
 
@@ -49,24 +54,37 @@ h2{text-align: center;}
    
 }
 .circle{
-    margin: 10px;
+    margin: 15px;
 }
 .circle>img{
     
     width: 150px;
     height: 150px;
     border-radius: 75px;
+    transition: transform .2s;
 }
-.video_card{
+.circle>img:hover{
+    transform: scale(1.1); 
     
-    margin-left: 2px;
-  
-
 }
-.video_card>h1{
+.circle:hover{
+    border-bottom: 1px solid #000;
+    
+}
+.video_card{    
+    margin-left: 2px;
+    
+    
+}
+.video_card:hover{
+    
+    box-shadow: 5px 10px 8px #888888;
+}  
+    
+.video_card>h3{
     
     text-overflow: ellipsis;
-    font-size: 20px;
+    font-size: 15px;
 }
 i{
     margin: 0px;
@@ -77,4 +95,73 @@ i{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+del{
+    color: green;
+    font-size: 12px;
+}
+.Dis{
+    color: green;
+    font-size: 12px;
+}
+h1{
+    margin-left: 15px;
+    text-align: center;
+    font-weight: 100;
+    font-size: xx-large;
+}
+.shop{
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+.shop_crd{
+   
+    margin: 28px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+}
+.shop_crd>img{
+    border-top-right-radius: 30px;
+    border-top-left-radius: 30px;
+    width: 200px;
+    height: 190px;
+}
+.shop_crd:hover{
+    border: 1px solid #000;
+    border-radius: 30px;
+    box-shadow: 5px 10px 8px #888888;
+}
+.discpt{
+   background-color: #fdebd2; 
+   padding-top: 20px;
+   display: flex;
+   flex-wrap: wrap;
+}
+.para{
+    width: 350px;
+    margin: 45px;
+}
+.discpt>h2{
+    width: 100%;
+    font-weight: 300;
+    font-size: 42px;
+    margin-bottom: 0px;
+    text-align: center;
+    font-family: "Guardian-EgypTT","Charter","Charter Bitstream","Cambria","Noto Serif Light","Droid Serif","Georgia","serif";
+}
+.discpt>p{
+    text-align: center;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    color: black;
+}
+a{
+    color: black;
 }
