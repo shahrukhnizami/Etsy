@@ -63,11 +63,18 @@ i{
 h2{margin-left: 15px;
     margin-top: 20px;
 }
+.bg{
+   height: 30px;
+    width: 80px;
+    text-align: center;
+}
 .bg:hover{
     background-color: #ccc;
 
-    border-radius: 5px;
+
+    border-radius: 30px;
 }
+
 .img_card_area{
     text-align: center;
     font-family:"Guardian-EgypTT","Charter","Charter Bitstream","Cambria","Noto Serif Light","Droid Serif","Georgia","serif";
