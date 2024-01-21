@@ -25,13 +25,14 @@ body {
     margin-left: 10px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-end;
+    width: 750px;
+    min-width: 300px;
+    
     
     
 }
 .sr> input{
-    width: 750px;
-    min-width: 200px;
+    width: 700px;
     margin-top: 4px;
     
     
@@ -241,7 +242,7 @@ input{
     border: none;
 }
 .Email_bar{
-    width: 315px;
+   
     background-color: #fff;    
     display: inline-block;
      border: 1px soild #ccc;
