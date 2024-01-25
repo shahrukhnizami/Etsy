@@ -115,7 +115,7 @@ h2{margin-left: 15px;
 }
 .video_card:hover{
     
-    box-shadow: 0 3px 10px rgb(0 0 0 / 33%);
+    box-shadow: 5px 10px 8px #888888;
 }  
     
 .video_card>h3{
@@ -278,7 +278,7 @@ input{
     width: 160px;
     max-width: 1100px;
     border: 1px solid white;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 5px;
     text-align: center;
   
@@ -308,7 +308,7 @@ input{
     border-color: gray;
     height: 90px;
     flex-direction: row;
-    padding: 0px;
+    padding: 5px;
     text-align: left;
     }   
     .Category_card>img{
@@ -318,7 +318,8 @@ input{
     }
     .Category_card>span{
        
-        padding-left: 10px;
+        padding: 5px;
+        margin: 0px;
         
       
     }
