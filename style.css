@@ -106,21 +106,31 @@ h2{margin-left: 15px;
 .circle:hover{
     border-bottom: 1px solid #000;
     
+    
 }
-.video_card{    
-    margin-left: 2px;
+
+.video_card{
+    border-radius: 15px;
+    padding: 5px;
     
+}
+.video_card>img{
+    border-radius: 15px;
     
+}
+.video_card>video{
+    border-radius: 15px;
     
 }
 .video_card:hover{
     
     box-shadow: 5px 10px 8px #888888;
+    
 }  
     
 .video_card>h3{
     
-    text-overflow: ellipsis;
+    
     font-size: 15px;
 }
 i{
@@ -128,11 +138,37 @@ i{
     padding: 0px;
 }
 .popular{
-    margin-left: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    gap: 5px;
+    border-radius: 15px;
 }
+.video_card:last-child {
+    display: none;
+  
+}
+@media (max-width:1000px) {
+    .popular {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .video_card:last-child {
+        display: inline;
+    }
+    @media (max-width:600px) {
+        .popular {
+            grid-template-columns: repeat(2, 1fr);
+        }
+    }
+    
+    @media (max-width:400px) {
+        .popular {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }    
+}
+
 del{
     color: green;
     font-size: 12px;
